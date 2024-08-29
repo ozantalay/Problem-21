@@ -38,6 +38,7 @@ function MousePosition() {
     window.addEventListener('pointermove', handleMove)
 
     return () => {
+      window.removeEventListener('pointermove',handleMove)
       console.log('Unmounted')
     }
   }, [])
