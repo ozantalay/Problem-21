@@ -33,7 +33,7 @@ function MousePosition() {
   useEffect(() => {
     function handleMove(e) {
       setPosition({ x: e.clientX, y: e.clientY })
-      console.log('Updating statee')
+      console.log('Updating state')
     }
     window.addEventListener('pointermove', handleMove)
 
